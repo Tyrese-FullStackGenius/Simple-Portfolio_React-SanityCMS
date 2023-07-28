@@ -1,0 +1,29 @@
+.services__container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .services__container {
+    grid-template-columns: 145px;
+    justify-content: center;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .services__container {
+    grid-template-columns: repeat(2, 160px);
+    justify-content: center;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 992px) {
+  .services__container {
+    grid-template-columns: repeat(3, 192px);
+    column-gap: 3rem;
+  }
+}

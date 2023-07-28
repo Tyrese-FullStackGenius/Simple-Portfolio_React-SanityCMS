@@ -1,0 +1,12 @@
+.skills__container {
+  row-gap: 2rem;
+  padding-top: 1rem;
+}
+
+/* For large devices */
+@media screen and (min-width: 992px) {
+  .skills__container {
+    grid-template-columns: repeat(2, 350px);
+    column-gap: 3rem;
+  }
+}
