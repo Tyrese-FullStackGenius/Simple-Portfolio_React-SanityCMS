@@ -11,10 +11,9 @@ function Skills() {
   useEffect(() => {
     const query = '*[_type == "skills"]';
 
-    client.fetch(query)
-      .then((data) => {
-        setSkills(data)
-      });
+    client.fetch(query).then((data) => {
+      setSkills(data);
+    });
   }, []);
 
   return (
@@ -24,11 +23,11 @@ function Skills() {
 
       <div className="container grid skills__container">
         {skills.map((skill, index) => (
-          <SkillsCard {...skill} key={index}/>
+          <SkillsCard {...skill} key={index} />
         ))}
       </div>
     </>
-  )
+  );
 }
 
 export default AppWrap(Skills, "skills");
